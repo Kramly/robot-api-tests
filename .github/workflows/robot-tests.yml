@@ -55,6 +55,11 @@ jobs:
         with:
           name: robot-reports
           path: public
+      
+      - name: Set report.html as index
+        run: |
+            cp public/report.html public/index.html
+  
 
       - name: Deploy to GitHub Pages
         uses: peaceiris/actions-gh-pages@v3
