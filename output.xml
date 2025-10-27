@@ -1,25 +1,25 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<robot generator="Robot 7.3.2 (Python 3.11.13 on linux)" generated="2025-10-27T23:13:05.716094" rpa="false" schemaversion="5">
+<robot generator="Robot 7.3.2 (Python 3.11.13 on linux)" generated="2025-10-27T23:27:27.958346" rpa="false" schemaversion="5">
 <suite id="s1" name="Tests" source="/home/runner/work/robot-api-tests/robot-api-tests/tests">
 <suite id="s1-s1" name="Api Tests" source="/home/runner/work/robot-api-tests/robot-api-tests/tests/api_tests.robot">
 <test id="s1-s1-t1" name="Get Users Should Return 200" line="9">
 <kw name="Create Session" owner="RequestsLibrary">
-<msg time="2025-10-27T23:13:05.783555" level="INFO">Creating Session using : alias=api, url=https://jsonplaceholder.typicode.com, headers={},                     cookies={}, auth=None, timeout=None, proxies=None, verify=False,                     debug=0 </msg>
+<msg time="2025-10-27T23:27:28.026465" level="INFO">Creating Session using : alias=api, url=https://jsonplaceholder.typicode.com, headers={},                     cookies={}, auth=None, timeout=None, proxies=None, verify=False,                     debug=0 </msg>
 <arg>api</arg>
 <arg>${BASE_URL}</arg>
 <doc>Create Session: create a HTTP session to a server</doc>
-<status status="PASS" start="2025-10-27T23:13:05.783407" elapsed="0.000300"/>
+<status status="PASS" start="2025-10-27T23:27:28.026298" elapsed="0.000328"/>
 </kw>
 <kw name="Get Request" owner="RequestsLibrary">
-<msg time="2025-10-27T23:13:05.783848" level="WARN">Keyword 'RequestsLibrary.Get Request' is deprecated. Please use `GET On Session` instead.</msg>
-<msg time="2025-10-27T23:13:05.839186" level="INFO">GET Request : url=https://jsonplaceholder.typicode.com/users 
+<msg time="2025-10-27T23:27:28.026797" level="WARN">Keyword 'RequestsLibrary.Get Request' is deprecated. Please use `GET On Session` instead.</msg>
+<msg time="2025-10-27T23:27:28.070970" level="INFO">GET Request : url=https://jsonplaceholder.typicode.com/users 
  path_url=/users 
  headers={'User-Agent': 'python-requests/2.32.5', 'Accept-Encoding': 'gzip, deflate', 'Accept': '*/*', 'Connection': 'keep-alive'} 
  body=None 
  </msg>
-<msg time="2025-10-27T23:13:05.839320" level="INFO">GET Response : url=https://jsonplaceholder.typicode.com/users 
+<msg time="2025-10-27T23:27:28.071106" level="INFO">GET Response : url=https://jsonplaceholder.typicode.com/users 
  status=200, reason=OK 
- headers={'Date': 'Mon, 27 Oct 2025 23:13:05 GMT', 'Content-Type': 'application/json; charset=utf-8', 'Content-Length': '1847', 'Connection': 'keep-alive', 'access-control-allow-credentials': 'true', 'Cache-Control': 'max-age=43200', 'Content-Encoding': 'gzip', 'etag': 'W/"160d-1eMSsxeJRfnVLRBmYJSbCiJZ1qQ"', 'expires': '-1', 'nel': '{"report_to":"heroku-nel","response_headers":["Via"],"max_age":3600,"success_fraction":0.01,"failure_fraction":0.1}', 'pragma': 'no-cache', 'report-to': '{"group":"heroku-nel","endpoints":[{"url":"https://nel.heroku.com/reports?s=2Vc05t5krk8Zg%2FnAqHFDGH8o0CBB0%2BKN925i7qHfNic%3D\\u0026sid=e11707d5-02a7-43ef-b45e-2cf4d2036f7d\\u0026ts=1759515399"}],"max_age":3600}', 'reporting-endpoints': 'heroku-nel="https://nel.heroku.com/reports?s=2Vc05t5krk8Zg%2FnAqHFDGH8o0CBB0%2BKN925i7qHfNic%3D&amp;sid=e11707d5-02a7-43ef-b45e-2cf4d2036f7d&amp;ts=1759515399"', 'Server': 'cloudflare', 'vary': 'Origin, Accept-Encoding', 'via': '2.0 heroku-router', 'x-content-type-options': 'nosniff', 'x-powered-by': 'Express', 'x-ratelimit-limit': '1000', 'x-ratelimit-remaining': '999', 'x-ratelimit-reset': '1759515435', 'Age': '23921', 'cf-cache-status': 'HIT', 'CF-RAY': '9955e1cb68f8c98b-IAD', 'alt-svc': 'h3=":443"; ma=86400'} 
+ headers={'Date': 'Mon, 27 Oct 2025 23:27:28 GMT', 'Content-Type': 'application/json; charset=utf-8', 'Content-Length': '1847', 'Connection': 'keep-alive', 'access-control-allow-credentials': 'true', 'Cache-Control': 'max-age=43200', 'Content-Encoding': 'gzip', 'etag': 'W/"160d-1eMSsxeJRfnVLRBmYJSbCiJZ1qQ"', 'expires': '-1', 'nel': '{"report_to":"heroku-nel","response_headers":["Via"],"max_age":3600,"success_fraction":0.01,"failure_fraction":0.1}', 'pragma': 'no-cache', 'report-to': '{"group":"heroku-nel","endpoints":[{"url":"https://nel.heroku.com/reports?s=W7Dzbijw3U4ORwuKjOxf%2BNbbbpcni904vRWMls6K4PM%3D\\u0026sid=e11707d5-02a7-43ef-b45e-2cf4d2036f7d\\u0026ts=1761233953"}],"max_age":3600}', 'reporting-endpoints': 'heroku-nel="https://nel.heroku.com/reports?s=W7Dzbijw3U4ORwuKjOxf%2BNbbbpcni904vRWMls6K4PM%3D&amp;sid=e11707d5-02a7-43ef-b45e-2cf4d2036f7d&amp;ts=1761233953"', 'Server': 'cloudflare', 'vary': 'Origin, Accept-Encoding', 'via': '2.0 heroku-router', 'x-content-type-options': 'nosniff', 'x-powered-by': 'Express', 'x-ratelimit-limit': '1000', 'x-ratelimit-remaining': '998', 'x-ratelimit-reset': '1761234007', 'Age': '26512', 'cf-cache-status': 'HIT', 'CF-RAY': '9955f6d86ec7226a-ORD', 'alt-svc': 'h3=":443"; ma=86400'} 
  body=[
   {
     "id": 1,
@@ -253,58 +253,58 @@
   }
 ] 
  </msg>
-<msg time="2025-10-27T23:13:05.839489" level="INFO">/opt/hostedtoolcache/Python/3.11.13/x64/lib/python3.11/site-packages/urllib3/connectionpool.py:1097: InsecureRequestWarning: Unverified HTTPS request is being made to host 'jsonplaceholder.typicode.com'. Adding certificate verification is strongly advised. See: https://urllib3.readthedocs.io/en/latest/advanced-usage.html#tls-warnings
+<msg time="2025-10-27T23:27:28.071252" level="INFO">/opt/hostedtoolcache/Python/3.11.13/x64/lib/python3.11/site-packages/urllib3/connectionpool.py:1097: InsecureRequestWarning: Unverified HTTPS request is being made to host 'jsonplaceholder.typicode.com'. Adding certificate verification is strongly advised. See: https://urllib3.readthedocs.io/en/latest/advanced-usage.html#tls-warnings
   warnings.warn(</msg>
-<msg time="2025-10-27T23:13:05.839598" level="INFO">${response} = &lt;Response [200]&gt;</msg>
+<msg time="2025-10-27T23:27:28.071400" level="INFO">${response} = &lt;Response [200]&gt;</msg>
 <var>${response}</var>
 <arg>api</arg>
 <arg>/users</arg>
 <doc>*DEPRECATED* Please use `GET On Session` instead.</doc>
-<status status="PASS" start="2025-10-27T23:13:05.783823" elapsed="0.055811"/>
+<status status="PASS" start="2025-10-27T23:27:28.026770" elapsed="0.044668"/>
 </kw>
 <kw name="Should Be Equal As Integers" owner="BuiltIn">
-<msg time="2025-10-27T23:13:05.840278" level="INFO">Argument types are:
+<msg time="2025-10-27T23:27:28.072212" level="INFO">Argument types are:
 &lt;class 'int'&gt;
 &lt;class 'str'&gt;</msg>
 <arg>${response.status_code}</arg>
 <arg>200</arg>
 <doc>Fails if objects are unequal after converting them to integers.</doc>
-<status status="PASS" start="2025-10-27T23:13:05.839787" elapsed="0.000551"/>
+<status status="PASS" start="2025-10-27T23:27:28.071641" elapsed="0.000634"/>
 </kw>
 <kw name="Log To Console" owner="BuiltIn">
 <arg>${response.json()[0]['name']}</arg>
 <doc>Logs the given message to the console.</doc>
-<status status="PASS" start="2025-10-27T23:13:05.840439" elapsed="0.000409"/>
+<status status="PASS" start="2025-10-27T23:27:28.072379" elapsed="0.000433"/>
 </kw>
-<status status="PASS" start="2025-10-27T23:13:05.782669" elapsed="0.058313"/>
+<status status="PASS" start="2025-10-27T23:27:28.025527" elapsed="0.047440"/>
 </test>
 <test id="s1-s1-t2" name="Create New Post Should Return 201" line="15">
 <kw name="Create Session" owner="RequestsLibrary">
-<msg time="2025-10-27T23:13:05.841610" level="INFO">Creating Session using : alias=api, url=https://jsonplaceholder.typicode.com, headers={},                     cookies={}, auth=None, timeout=None, proxies=None, verify=False,                     debug=0 </msg>
+<msg time="2025-10-27T23:27:28.073637" level="INFO">Creating Session using : alias=api, url=https://jsonplaceholder.typicode.com, headers={},                     cookies={}, auth=None, timeout=None, proxies=None, verify=False,                     debug=0 </msg>
 <arg>api</arg>
 <arg>${BASE_URL}</arg>
 <doc>Create Session: create a HTTP session to a server</doc>
-<status status="PASS" start="2025-10-27T23:13:05.841485" elapsed="0.000258"/>
+<status status="PASS" start="2025-10-27T23:27:28.073508" elapsed="0.000294"/>
 </kw>
 <kw name="Create Dictionary" owner="BuiltIn">
-<msg time="2025-10-27T23:13:05.842057" level="INFO">${payload} = {'title': 'Robot Test', 'body': 'This is a test post', 'userId': '1'}</msg>
+<msg time="2025-10-27T23:27:28.074147" level="INFO">${payload} = {'title': 'Robot Test', 'body': 'This is a test post', 'userId': '1'}</msg>
 <var>${payload}</var>
 <arg>title=Robot Test</arg>
 <arg>body=This is a test post</arg>
 <arg>userId=1</arg>
 <doc>Creates and returns a dictionary based on the given ``items``.</doc>
-<status status="PASS" start="2025-10-27T23:13:05.841844" elapsed="0.000237"/>
+<status status="PASS" start="2025-10-27T23:27:28.073912" elapsed="0.000259"/>
 </kw>
 <kw name="Post Request" owner="RequestsLibrary">
-<msg time="2025-10-27T23:13:05.842226" level="WARN">Keyword 'RequestsLibrary.Post Request' is deprecated. Please use `POST On Session` instead.</msg>
-<msg time="2025-10-27T23:13:05.894730" level="INFO">POST Request : url=https://jsonplaceholder.typicode.com/posts 
+<msg time="2025-10-27T23:27:28.074289" level="WARN">Keyword 'RequestsLibrary.Post Request' is deprecated. Please use `POST On Session` instead.</msg>
+<msg time="2025-10-27T23:27:28.171594" level="INFO">POST Request : url=https://jsonplaceholder.typicode.com/posts 
  path_url=/posts 
  headers={'User-Agent': 'python-requests/2.32.5', 'Accept-Encoding': 'gzip, deflate', 'Accept': '*/*', 'Connection': 'keep-alive', 'Content-Length': '69', 'Content-Type': 'application/json'} 
  body=b'{"title": "Robot Test", "body": "This is a test post", "userId": "1"}' 
  </msg>
-<msg time="2025-10-27T23:13:05.894798" level="INFO">POST Response : url=https://jsonplaceholder.typicode.com/posts 
+<msg time="2025-10-27T23:27:28.171696" level="INFO">POST Response : url=https://jsonplaceholder.typicode.com/posts 
  status=201, reason=Created 
- headers={'Date': 'Mon, 27 Oct 2025 23:13:05 GMT', 'Content-Type': 'application/json; charset=utf-8', 'Content-Length': '90', 'Connection': 'keep-alive', 'access-control-allow-credentials': 'true', 'access-control-expose-headers': 'Location', 'Cache-Control': 'no-cache', 'etag': 'W/"5a-h0PvIBNRBeiRklxW8fX3OpErJD0"', 'expires': '-1', 'location': 'https://jsonplaceholder.typicode.com/posts/101', 'nel': '{"report_to":"heroku-nel","response_headers":["Via"],"max_age":3600,"success_fraction":0.01,"failure_fraction":0.1}', 'pragma': 'no-cache', 'report-to': '{"group":"heroku-nel","endpoints":[{"url":"https://nel.heroku.com/reports?s=BVP5XLbLAPJ9TWEkpG9gvQkM3q57nm%2FAeflLYGjyqGU%3D\\u0026sid=e11707d5-02a7-43ef-b45e-2cf4d2036f7d\\u0026ts=1761606785"}],"max_age":3600}', 'reporting-endpoints': 'heroku-nel="https://nel.heroku.com/reports?s=BVP5XLbLAPJ9TWEkpG9gvQkM3q57nm%2FAeflLYGjyqGU%3D&amp;sid=e11707d5-02a7-43ef-b45e-2cf4d2036f7d&amp;ts=1761606785"', 'Server': 'cloudflare', 'vary': 'Origin, X-HTTP-Method-Override, Accept-Encoding', 'via': '2.0 heroku-router', 'x-content-type-options': 'nosniff', 'x-powered-by': 'Express', 'x-ratelimit-limit': '1000', 'x-ratelimit-remaining': '998', 'x-ratelimit-reset': '1761606815', 'cf-cache-status': 'DYNAMIC', 'CF-RAY': '9955e1cbcd125938-IAD', 'alt-svc': 'h3=":443"; ma=86400'} 
+ headers={'Date': 'Mon, 27 Oct 2025 23:27:28 GMT', 'Content-Type': 'application/json; charset=utf-8', 'Content-Length': '90', 'Connection': 'keep-alive', 'access-control-allow-credentials': 'true', 'access-control-expose-headers': 'Location', 'Cache-Control': 'no-cache', 'etag': 'W/"5a-h0PvIBNRBeiRklxW8fX3OpErJD0"', 'expires': '-1', 'location': 'https://jsonplaceholder.typicode.com/posts/101', 'nel': '{"report_to":"heroku-nel","response_headers":["Via"],"max_age":3600,"success_fraction":0.01,"failure_fraction":0.1}', 'pragma': 'no-cache', 'report-to': '{"group":"heroku-nel","endpoints":[{"url":"https://nel.heroku.com/reports?s=u%2BBjD%2F8JFmctOnCzYKzoECBZaWpHNVyElP0d5AQSlYU%3D\\u0026sid=e11707d5-02a7-43ef-b45e-2cf4d2036f7d\\u0026ts=1761607648"}],"max_age":3600}', 'reporting-endpoints': 'heroku-nel="https://nel.heroku.com/reports?s=u%2BBjD%2F8JFmctOnCzYKzoECBZaWpHNVyElP0d5AQSlYU%3D&amp;sid=e11707d5-02a7-43ef-b45e-2cf4d2036f7d&amp;ts=1761607648"', 'Server': 'cloudflare', 'vary': 'Origin, X-HTTP-Method-Override, Accept-Encoding', 'via': '2.0 heroku-router', 'x-content-type-options': 'nosniff', 'x-powered-by': 'Express', 'x-ratelimit-limit': '1000', 'x-ratelimit-remaining': '998', 'x-ratelimit-reset': '1761607655', 'cf-cache-status': 'DYNAMIC', 'CF-RAY': '9955f6d8ed39d6bd-IAD', 'alt-svc': 'h3=":443"; ma=86400'} 
  body={
   "title": "Robot Test",
   "body": "This is a test post",
@@ -312,36 +312,36 @@
   "id": 101
 } 
  </msg>
-<msg time="2025-10-27T23:13:05.894851" level="INFO">/opt/hostedtoolcache/Python/3.11.13/x64/lib/python3.11/site-packages/urllib3/connectionpool.py:1097: InsecureRequestWarning: Unverified HTTPS request is being made to host 'jsonplaceholder.typicode.com'. Adding certificate verification is strongly advised. See: https://urllib3.readthedocs.io/en/latest/advanced-usage.html#tls-warnings
+<msg time="2025-10-27T23:27:28.171803" level="INFO">/opt/hostedtoolcache/Python/3.11.13/x64/lib/python3.11/site-packages/urllib3/connectionpool.py:1097: InsecureRequestWarning: Unverified HTTPS request is being made to host 'jsonplaceholder.typicode.com'. Adding certificate verification is strongly advised. See: https://urllib3.readthedocs.io/en/latest/advanced-usage.html#tls-warnings
   warnings.warn(</msg>
-<msg time="2025-10-27T23:13:05.894946" level="INFO">${response} = &lt;Response [201]&gt;</msg>
+<msg time="2025-10-27T23:27:28.171935" level="INFO">${response} = &lt;Response [201]&gt;</msg>
 <var>${response}</var>
 <arg>api</arg>
 <arg>/posts</arg>
 <arg>json=${payload}</arg>
 <doc>*DEPRECATED* Please use `POST On Session` instead.</doc>
-<status status="PASS" start="2025-10-27T23:13:05.842202" elapsed="0.052780"/>
+<status status="PASS" start="2025-10-27T23:27:28.074267" elapsed="0.097706"/>
 </kw>
 <kw name="Should Be Equal As Integers" owner="BuiltIn">
-<msg time="2025-10-27T23:13:05.895789" level="INFO">Argument types are:
+<msg time="2025-10-27T23:27:28.172775" level="INFO">Argument types are:
 &lt;class 'int'&gt;
 &lt;class 'str'&gt;</msg>
 <arg>${response.status_code}</arg>
 <arg>201</arg>
 <doc>Fails if objects are unequal after converting them to integers.</doc>
-<status status="PASS" start="2025-10-27T23:13:05.895193" elapsed="0.000661"/>
+<status status="PASS" start="2025-10-27T23:27:28.172200" elapsed="0.000634"/>
 </kw>
 <kw name="Dictionary Should Contain Key" owner="Collections">
 <arg>${response.json()}</arg>
 <arg>id</arg>
 <doc>Fails if ``key`` is not found from ``dictionary``.</doc>
-<status status="PASS" start="2025-10-27T23:13:05.895946" elapsed="0.000377"/>
+<status status="PASS" start="2025-10-27T23:27:28.172925" elapsed="0.000354"/>
 </kw>
-<status status="PASS" start="2025-10-27T23:13:05.841203" elapsed="0.055208"/>
+<status status="PASS" start="2025-10-27T23:27:28.073197" elapsed="0.100181"/>
 </test>
-<status status="PASS" start="2025-10-27T23:13:05.738076" elapsed="0.158696"/>
+<status status="PASS" start="2025-10-27T23:27:27.980555" elapsed="0.193265"/>
 </suite>
-<status status="PASS" start="2025-10-27T23:13:05.716920" elapsed="0.180312"/>
+<status status="PASS" start="2025-10-27T23:27:27.959185" elapsed="0.215090"/>
 </suite>
 <statistics>
 <total>
@@ -355,7 +355,7 @@
 </suite>
 </statistics>
 <errors>
-<msg time="2025-10-27T23:13:05.783848" level="WARN">Keyword 'RequestsLibrary.Get Request' is deprecated. Please use `GET On Session` instead.</msg>
-<msg time="2025-10-27T23:13:05.842226" level="WARN">Keyword 'RequestsLibrary.Post Request' is deprecated. Please use `POST On Session` instead.</msg>
+<msg time="2025-10-27T23:27:28.026797" level="WARN">Keyword 'RequestsLibrary.Get Request' is deprecated. Please use `GET On Session` instead.</msg>
+<msg time="2025-10-27T23:27:28.074289" level="WARN">Keyword 'RequestsLibrary.Post Request' is deprecated. Please use `POST On Session` instead.</msg>
 </errors>
 </robot>
