@@ -1,0 +1,25 @@
+# 🧠 Python virtual environment
+venv/
+
+# 🧰 Robot Framework output files
+output.xml
+log.html
+report.html
+debug.log
+
+# 🧪 Python cache files
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# 🧑‍💻 VS Code settings
+.vscode/
+
+# 🗂️ OS system files
+.DS_Store
+Thumbs.db
+
+# 📦 Dependency cache folders
+.env
+.venv/
