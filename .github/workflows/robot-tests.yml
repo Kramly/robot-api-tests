@@ -1,0 +1,42 @@
+name: 🤖 Robot Framework API Tests
+
+on:
+  push:
+    branches: [ main ]
+  pull_request:
+    branches: [ main ]
+
+jobs:
+  test:
+    name: Run Robot Framework API tests
+    runs-on: ubuntu-latest
+
+    steps:
+      # 🧰 Step 1: Checkout repository
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      # 🐍 Step 2: Set up Python
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.x'
+
+      # 📦 Step 3: Install dependencies
+      - name: Install dependencies
+        run: |
+          python -m pip install --upgrade pip
+          pip install -r requirements.txt
+
+      # 🧪 Step 4: Run Robot Framework tests
+      - name: Run Robot Framework tests
+        run: |
+          mkdir -p reports
+          robot -d reports tests/
+
+      # 📤 Step 5: Upload Robot test reports
+      - name: Upload Robot reports
+        uses: actions/upload-artifact@v4
+        with:
+          name: robot-reports
+          path: reports/
