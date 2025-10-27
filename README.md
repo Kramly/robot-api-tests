@@ -68,3 +68,5 @@ Installs Robot Framework
 Runs the API tests
 
 Uploads the report as a build artifact
+----
+Note: testing workflow
