@@ -57,7 +57,7 @@ robot -d reports tests/
 ✅ How to create a GitHub repository directly from the command line using gh
 ✅ How to deactivate the virtual environment
 
-🚀 Next Step 
+🚀 Next Steps 
 Add GitHub Actions CI/CD to automatically run tests on every push or pull request.
 We’ll use a simple workflow that:
 
