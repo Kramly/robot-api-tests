@@ -69,4 +69,29 @@ Runs the API tests
 
 Uploads the report as a build artifact
 ----
-Note: testing workflow
+This workflow runs the Robot tests on each push, saves reports as artifacts, and deploys them to GitHub Pages.
+We then create and configure the GitHub Pages branch:
+
+git checkout main
+git checkout --orphan gh-pages
+git rm -rf .
+echo "GitHub Pages branch" > README.md
+git add README.md
+git commit -m "Initialize GitHub Pages branch"
+git push origin gh-pages
+git checkout main
+
+Go to GitHub → Settings → Pages, select "Deploy from a branch", choose the gh-pages branch, and save.
+To trigger the workflow and publish the report:
+echo " " >> README.md
+git add README.md
+git commit -m "Trigger Robot test workflow"
+git push
+
+GitHub Actions will automatically run the Robot Framework API tests, upload the report.html and log.html files, and deploy them to your GitHub Pages site.
+Once complete, open:
+
+https://kramly.github.io/robot-api-tests/log.html
+
+Here you can view your live Robot Framework reports. report.html gives a summary, and log.html provides detailed steps.
+In summary, we created a Robot Framework project for API testing, used Python virtual environments, automated execution with GitHub Actions, and published reports on GitHub Pages.
