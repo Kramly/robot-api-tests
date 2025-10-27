@@ -29,8 +29,12 @@ jobs:
 
       - name: Run Robot Framework tests
         run: |
-          mkdir -p reports
+
+          TIMESTAMP=$(date +%Y-%m-%d_%H-%M-%S)
+          mkdir -p reports/${TIMESTAMP}
+          robot --outputdir reports/${TIMESTAMP} tests/
           robot --outputdir reports tests/
+          echo "TIMESTAMP=${TIMESTAMP}" >> $GITHUB_ENV
 
       - name: Upload Robot reports as artifact
         uses: actions/upload-artifact@v4
