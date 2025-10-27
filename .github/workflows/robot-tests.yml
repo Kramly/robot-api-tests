@@ -6,6 +6,9 @@ on:
   pull_request:
     branches: [ main ]
 
+permissions:
+  contents: write  # ✅ allows the workflow to push to gh-pages
+
 jobs:
   test:
     runs-on: ubuntu-latest
